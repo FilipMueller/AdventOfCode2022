@@ -64,4 +64,4 @@ public class Day3 {
     }
 }
 
-//TIME TAKEN 3:48:55.17
+//TIME TAKEN 3:48:55

@@ -35,4 +35,4 @@ public class CalorieCounting {
     }
 }
 
-//TIME TAKEN:   1:06:35.55
+//TIME TAKEN:   1:06:35

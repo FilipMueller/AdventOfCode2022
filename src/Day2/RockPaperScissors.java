@@ -56,4 +56,4 @@ public class RockPaperScissors {
     }
 }
 
-//TIME TAKEN:   00:31:45.89
+//TIME TAKEN:   00:31:45

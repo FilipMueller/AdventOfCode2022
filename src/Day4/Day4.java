@@ -1,7 +1,6 @@
 package Day4;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -13,18 +12,19 @@ public class Day4 {
 
         int howManyPairs = 0;
 
+
+
         while ((line = buffRd.readLine()) != null) {
             String[] elfs = line.split(",");
 
+            String[] numbersFirstElf = elfs[0].split("-");
+            String[] numbersSecondElf = elfs[1].split("-");
 
-            String[] NumbersFirstElf = elfs[0].split("-");
-            String[] NumbersSecondElf = elfs[1].split("-");
+            int firstNumberFirstElf = Integer.parseInt(numbersFirstElf[0]);
+            int secondNumberFirstElf = Integer.parseInt(numbersFirstElf[1]);
 
-            int firstNumberFirstElf = Integer.parseInt(NumbersFirstElf[0]);
-            int secondNumberFirstElf = Integer.parseInt(NumbersFirstElf[1]);
-
-            int firstNumberSecondElf = Integer.parseInt(NumbersSecondElf[0]);
-            int secondNumberSecondElf = Integer.parseInt(NumbersSecondElf[1]);
+            int firstNumberSecondElf = Integer.parseInt(numbersSecondElf[0]);
+            int secondNumberSecondElf = Integer.parseInt(numbersSecondElf[1]);
 
             //FIRST RIDDLE
 //            if (firstNumberFirstElf <= firstNumberSecondElf && secondNumberFirstElf >= secondNumberSecondElf) {
@@ -42,4 +42,4 @@ public class Day4 {
     }
 }
 
-//TIME TAKEN 00:46:04:36
+//TIME TAKEN 01:22:13
